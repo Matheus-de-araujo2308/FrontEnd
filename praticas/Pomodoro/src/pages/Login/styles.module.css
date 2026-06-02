@@ -3,25 +3,32 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-color: #121214;
+  background-color: #222121;
   font-family: 'Roboto', sans-serif;
-  color: #e1e1e6;
+  color: #FAEBD7;
 }
 
 .card {
-  background-color: #202024;
+  background-color: #355c5c;
   padding: 2.5rem;
   border-radius: 8px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
-  border: 1px solid #323238;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  border: 1px solid #486b6b;
   width: 100%;
   max-width: 400px;
   text-align: center;
 }
 
+.cardTitle {
+  margin-bottom: 1.5rem;
+  color: #DAA520;
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
 .card h2 {
   margin-bottom: 1.5rem;
-  color: #e1e1e6;
+  color: #FAEBD7;
   font-size: 1.75rem;
   font-weight: bold;
 }
@@ -41,47 +48,45 @@
 .inputGroup label {
   margin-bottom: 0.5rem;
   font-weight: 500;
-  color: #c4c4cc;
+  color: #FAEBD7;
   font-size: 0.875rem;
 }
 
 .inputGroup input {
   padding: 0.875rem;
-  background-color: #121214;
-  border: 1px solid #323238;
+  background-color: #FAEBD7;
+  border: 2px solid transparent;
   border-radius: 6px;
   font-size: 1rem;
-  color: #e1e1e6;
-  transition:
-    border-color 0.2s,
-    box-shadow 0.2s;
+  color: #2F4F4F;
+  transition: 0.2s;
 }
 
 .inputGroup input::placeholder {
-  color: #7c7c8a;
+  color: #6b7c7c;
 }
 
 .inputGroup input:focus {
   outline: none;
-  border-color: #8257e5;
-  box-shadow: 0 0 0 1px #8257e5;
+  border-color: #DAA520;
+  box-shadow: 0 0 0 3px rgba(218, 165, 32, 0.2);
 }
 
 .button {
   padding: 1rem;
-  background-color: #8257e5;
-  color: white;
+  background-color: #DAA520;
+  color: #FAEBD7;
   border: none;
   border-radius: 6px;
   font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.2s;
+  transition: 0.2s;
   margin-top: 0.5rem;
 }
 
 .button:hover {
-  background-color: #9466ff;
+  background-color: #c9971d;
 }
 
 .actions {
@@ -89,21 +94,21 @@
   flex-direction: column;
   gap: 0.75rem;
   margin-top: 1.5rem;
-  border-top: 1px solid #323238;
+  border-top: 1px solid #486b6b;
   padding-top: 1.5rem;
 }
 
 .linkButton {
   background: none;
   border: none;
-  color: #c4c4cc;
+  color: #DAA520;
   cursor: pointer;
   font-size: 0.875rem;
-  transition: color 0.2s;
+  transition: 0.2s;
 }
 
 .linkButton:hover {
-  color: #e1e1e6;
+  color: #f0c14b;
   text-decoration: underline;
 }
 
@@ -115,18 +120,18 @@
 }
 
 .success {
-  background-color: #015f43;
-  color: #e1e1e6;
+  background-color: #3b6e3b;
+  color: #FAEBD7;
 }
 
 .error {
-  background-color: #aa2834;
-  color: #e1e1e6;
+  background-color: #a63a3a;
+  color: #FAEBD7;
 }
 
 .info {
-  background-color: #323238;
-  color: #e1e1e6;
+  background-color: #486b6b;
+  color: #FAEBD7;
 }
 
 .passwordWrapper {
@@ -148,14 +153,14 @@
   transform: translateY(-50%);
   background: transparent;
   border: none;
-  color: #8257e5;
+  color: #DAA520;
   font-size: 0.875rem;
   font-weight: 600;
   cursor: pointer;
   padding: 0;
-  transition: color 0.2s;
+  transition: 0.2s;
 }
 
 .togglePasswordBtn:hover {
-  color: #9466ff;
+  color: #f0c14b;
 }
