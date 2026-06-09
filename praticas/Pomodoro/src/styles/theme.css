@@ -1,0 +1,63 @@
+:root {
+  /* Escala principal */
+  --gray-100: #FAEBD7;
+  --gray-200: #f0dfc9;
+  --gray-300: #d9cbb7;
+  --gray-400: #b8ab98;
+  --gray-500: #8e8578;
+  --gray-600: #5f6666;
+  --gray-700: #486161;
+  --gray-800: #385757;
+  --gray-900: #2F4F4F;
+
+  /* Cor primária: Dourado */
+  --primary-light: #e6bd4a;
+  --primary: #DAA520;
+  --primary-dark: #b8860b;
+
+  /* Links */
+  --link-color: #DAA520;
+  --link-hover: #e6bd4a;
+
+  /* Semânticas */
+  --success: #4f8a5b;
+  --warning: #DAA520;
+  --error: #c94f4f;
+  --info: #5d8a8a;
+
+  /* Texto sobre cores */
+  --text-over-primary: #FAEBD7;
+  --text-over-primary-dark: #FAEBD7;
+  --text-over-primary-light: #2F4F4F;
+  --text-over-success: #FAEBD7;
+  --text-over-warning: #2F4F4F;
+  --text-over-error: #FAEBD7;
+  --text-over-info: #FAEBD7;
+
+  /* Texto geral */
+  --text-default: #FAEBD7;
+  --text-muted: #d9cbb7;
+
+  /* Disabled */
+  --disabled: #486161;
+  --text-disabled: #8e8578;
+}
+
+/* Tema Claro */
+:root[data-theme='light'] {
+  --gray-100: #2F4F4F;
+  --gray-200: #385757;
+  --gray-300: #486161;
+  --gray-400: #5f6666;
+  --gray-500: #8e8578;
+  --gray-600: #b8ab98;
+  --gray-700: #d9cbb7;
+  --gray-800: #f0dfc9;
+  --gray-900: #FAEBD7;
+
+  --text-default: #2F4F4F;
+  --text-muted: #5f6666;
+
+  --link-color: #b8860b;
+  --link-hover: #DAA520;
+}

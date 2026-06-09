@@ -1,0 +1,166 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #222121;
+  font-family: 'Roboto', sans-serif;
+  color: #FAEBD7;
+}
+
+.card {
+  background-color: #355c5c;
+  padding: 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  border: 1px solid #486b6b;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.cardTitle {
+  margin-bottom: 1.5rem;
+  color: #DAA520;
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+.card h2 {
+  margin-bottom: 1.5rem;
+  color: #FAEBD7;
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.inputGroup label {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #FAEBD7;
+  font-size: 0.875rem;
+}
+
+.inputGroup input {
+  padding: 0.875rem;
+  background-color: #FAEBD7;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #2F4F4F;
+  transition: 0.2s;
+}
+
+.inputGroup input::placeholder {
+  color: #6b7c7c;
+}
+
+.inputGroup input:focus {
+  outline: none;
+  border-color: #DAA520;
+  box-shadow: 0 0 0 3px rgba(218, 165, 32, 0.2);
+}
+
+.button {
+  padding: 1rem;
+  background-color: #DAA520;
+  color: #FAEBD7;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-top: 0.5rem;
+}
+
+.button:hover {
+  background-color: #c9971d;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  border-top: 1px solid #486b6b;
+  padding-top: 1.5rem;
+}
+
+.linkButton {
+  background: none;
+  border: none;
+  color: #DAA520;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: 0.2s;
+}
+
+.linkButton:hover {
+  color: #f0c14b;
+  text-decoration: underline;
+}
+
+.feedback {
+  padding: 0.875rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+.success {
+  background-color: #3b6e3b;
+  color: #FAEBD7;
+}
+
+.error {
+  background-color: #a63a3a;
+  color: #FAEBD7;
+}
+
+.info {
+  background-color: #486b6b;
+  color: #FAEBD7;
+}
+
+.passwordWrapper {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+
+.passwordWrapper input {
+  width: 100%;
+  padding-right: 4.5rem;
+  box-sizing: border-box;
+}
+
+.togglePasswordBtn {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: #DAA520;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  transition: 0.2s;
+}
+
+.togglePasswordBtn:hover {
+  color: #f0c14b;
+}
