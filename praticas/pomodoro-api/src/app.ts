@@ -2,13 +2,17 @@ import express from 'express';
 import cors from 'cors';
 import { settingsRouter } from './routes/settings.routes';
 import { tasksRouter } from './routes/tasks.routes';
+import { authRouter } from './routes/auth.routes';
 
 export const app = express();
 
 app.use(cors());
 app.use(express.json());
 
-// Rotas
+// Rotas públicas (não exigem token)
+app.use('/auth', authRouter);
+
+// Rotas protegidas (exigem token JWT — o middleware é aplicado dentro de cada router)
 app.use('/settings', settingsRouter);
 app.use('/tasks', tasksRouter);
 

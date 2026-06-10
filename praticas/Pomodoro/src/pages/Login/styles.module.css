@@ -3,17 +3,17 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-color: #222121;
+  background-color: #0b1020;
   font-family: 'Roboto', sans-serif;
-  color: #FAEBD7;
+  color: #eef2f7;
 }
 
 .card {
-  background-color: #355c5c;
+  background-color: #141b2d;
   padding: 2.5rem;
   border-radius: 8px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-  border: 1px solid #486b6b;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  border: 1px solid #313b54;
   width: 100%;
   max-width: 400px;
   text-align: center;
@@ -21,14 +21,14 @@
 
 .cardTitle {
   margin-bottom: 1.5rem;
-  color: #DAA520;
+  color: #d4af37;
   font-size: 1.75rem;
   font-weight: bold;
 }
 
 .card h2 {
   margin-bottom: 1.5rem;
-  color: #FAEBD7;
+  color: #eef2f7;
   font-size: 1.75rem;
   font-weight: bold;
 }
@@ -48,45 +48,47 @@
 .inputGroup label {
   margin-bottom: 0.5rem;
   font-weight: 500;
-  color: #FAEBD7;
+  color: #9ca9c4;
   font-size: 0.875rem;
 }
 
 .inputGroup input {
   padding: 0.875rem;
-  background-color: #FAEBD7;
-  border: 2px solid transparent;
+  background-color: #0b1020;
+  border: 1px solid #313b54;
   border-radius: 6px;
   font-size: 1rem;
-  color: #2F4F4F;
-  transition: 0.2s;
+  color: #eef2f7;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
 }
 
 .inputGroup input::placeholder {
-  color: #6b7c7c;
+  color: #66738f;
 }
 
 .inputGroup input:focus {
   outline: none;
-  border-color: #DAA520;
-  box-shadow: 0 0 0 3px rgba(218, 165, 32, 0.2);
+  border-color: #d4af37;
+  box-shadow: 0 0 0 1px #d4af37;
 }
 
 .button {
   padding: 1rem;
-  background-color: #DAA520;
-  color: #FAEBD7;
+  background-color: #d4af37;
+  color: #0b1020;
   border: none;
   border-radius: 6px;
   font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
-  transition: 0.2s;
+  transition: background-color 0.2s;
   margin-top: 0.5rem;
 }
 
 .button:hover {
-  background-color: #c9971d;
+  background-color: #b38f1f;
 }
 
 .actions {
@@ -94,21 +96,21 @@
   flex-direction: column;
   gap: 0.75rem;
   margin-top: 1.5rem;
-  border-top: 1px solid #486b6b;
+  border-top: 1px solid #313b54;
   padding-top: 1.5rem;
 }
 
 .linkButton {
   background: none;
   border: none;
-  color: #DAA520;
+  color: #9ca9c4;
   cursor: pointer;
   font-size: 0.875rem;
-  transition: 0.2s;
+  transition: color 0.2s;
 }
 
 .linkButton:hover {
-  color: #f0c14b;
+  color: #eef2f7;
   text-decoration: underline;
 }
 
@@ -120,18 +122,18 @@
 }
 
 .success {
-  background-color: #3b6e3b;
-  color: #FAEBD7;
+  background-color: #3ecf8e;
+  color: #0b1020;
 }
 
 .error {
-  background-color: #a63a3a;
-  color: #FAEBD7;
+  background-color: #e05c5c;
+  color: #eef2f7;
 }
 
 .info {
-  background-color: #486b6b;
-  color: #FAEBD7;
+  background-color: #313b54;
+  color: #eef2f7;
 }
 
 .passwordWrapper {
@@ -153,14 +155,54 @@
   transform: translateY(-50%);
   background: transparent;
   border: none;
-  color: #DAA520;
+  color: #d4af37;
   font-size: 0.875rem;
   font-weight: 600;
   cursor: pointer;
   padding: 0;
-  transition: 0.2s;
+  transition: color 0.2s;
 }
 
 .togglePasswordBtn:hover {
-  color: #f0c14b;
+  color: #ffd86b;
+}
+
+.description {
+  color: #9ca9c4;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.devBox {
+  margin-top: 1.5rem;
+  background-color: #1f2740;
+  border: 1px dashed #d4af37;
+  border-radius: 6px;
+  padding: 1rem;
+  text-align: left;
+  font-size: 0.825rem;
+  color: #d7deea;
+}
+
+.devBox strong {
+  color: #d4af37;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.devToken {
+  display: block;
+  word-break: break-all;
+  background-color: #0b1020;
+  padding: 0.5rem;
+  border-radius: 4px;
+  color: #3ecf8e;
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }

@@ -1,63 +1,57 @@
 :root {
-  /* Escala principal */
-  --gray-100: #FAEBD7;
-  --gray-200: #f0dfc9;
-  --gray-300: #d9cbb7;
-  --gray-400: #b8ab98;
-  --gray-500: #8e8578;
-  --gray-600: #5f6666;
-  --gray-700: #486161;
-  --gray-800: #385757;
-  --gray-900: #2F4F4F;
 
-  /* Cor primária: Dourado */
-  --primary-light: #e6bd4a;
-  --primary: #DAA520;
-  --primary-dark: #b8860b;
+  --gray-100: #eef2f7;
+  --gray-200: #d7deea;
+  --gray-300: #9ca9c4;
+  --gray-400: #66738f;
+  --gray-500: #4b5672;
+  --gray-600: #313b54;
+  --gray-700: #1f2740;
+  --gray-800: #141b2d;
+  --gray-900: #0b1020;
 
-  /* Links */
-  --link-color: #DAA520;
-  --link-hover: #e6bd4a;
+  /* Dourado */
+  --primary-light: #ffd86b;
+  --primary: #d4af37;
+  --primary-dark: #b38f1f;
 
-  /* Semânticas */
-  --success: #4f8a5b;
-  --warning: #DAA520;
-  --error: #c94f4f;
-  --info: #5d8a8a;
+  --link-color: #e6c75c;
+  --link-hover: #ffd86b;
 
-  /* Texto sobre cores */
-  --text-over-primary: #FAEBD7;
-  --text-over-primary-dark: #FAEBD7;
-  --text-over-primary-light: #2F4F4F;
-  --text-over-success: #FAEBD7;
-  --text-over-warning: #2F4F4F;
-  --text-over-error: #FAEBD7;
-  --text-over-info: #FAEBD7;
+  --success: #3ecf8e;
+  --warning: #f5a623;
+  --error: #e05c5c;
+  --info: #5ba8f5;
 
-  /* Texto geral */
-  --text-default: #FAEBD7;
-  --text-muted: #d9cbb7;
+  --text-over-primary: #0b1020;
+  --text-over-primary-dark: #eef2f7;
+  --text-over-primary-light: #0b1020;
+  --text-over-success: #0b1020;
+  --text-over-warning: #0b1020;
+  --text-over-error: #eef2f7;
+  --text-over-info: #0b1020;
 
-  /* Disabled */
-  --disabled: #486161;
-  --text-disabled: #8e8578;
+  --text-default: #eef2f7;
+  --text-muted: #9ca9c4;
+
+  --disabled: #313b54;
+  --text-disabled: #66738f;
 }
 
-/* Tema Claro */
 :root[data-theme='light'] {
-  --gray-100: #2F4F4F;
-  --gray-200: #385757;
-  --gray-300: #486161;
-  --gray-400: #5f6666;
-  --gray-500: #8e8578;
-  --gray-600: #b8ab98;
-  --gray-700: #d9cbb7;
-  --gray-800: #f0dfc9;
-  --gray-900: #FAEBD7;
+  --gray-100: #0b1020;
+  --gray-200: #141b2d;
+  --gray-300: #1f2740;
+  --gray-400: #313b54;
+  --gray-500: #4b5672;
+  --gray-600: #66738f;
+  --gray-700: #9ca9c4;
+  --gray-800: #d7deea;
+  --gray-900: #f8f9fc;
 
-  --text-default: #2F4F4F;
-  --text-muted: #5f6666;
+  --text-default: #1f2740;
+  --text-muted: #4b5672;
 
-  --link-color: #b8860b;
-  --link-hover: #DAA520;
+  --link-color: #b38f1f;
+  --link-hover: #d4af37;
 }

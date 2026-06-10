@@ -1,12 +1,19 @@
 // Centraliza todas as chamadas à pomodoro-api
 const BASE_URL = 'http://localhost:3333';
 
-async function request<T>(
-  path: string,
-  options?: RequestInit,
-): Promise<T> {
+// Injeta o Bearer token em todas as requisições autenticadas
+function authHeaders(): Record<string, string> {
+  const token = localStorage.getItem('authToken');
+  return token ? { Authorization: `Bearer ${token}` } : {};
+}
+
+async function request<T>(path: string, options?: RequestInit): Promise<T> {
   const response = await fetch(`${BASE_URL}${path}`, {
-    headers: { 'Content-Type': 'application/json' },
+    headers: {
+      'Content-Type': 'application/json',
+      ...authHeaders(),
+      ...(options?.headers ?? {}),
+    },
     ...options,
   });
 
@@ -25,6 +32,7 @@ async function request<T>(
 
 export type ApiSettings = {
   id: number;
+  userId: number;
   workTime: number;
   shortBreakTime: number;
   longBreakTime: number;
@@ -34,7 +42,7 @@ export type ApiSettings = {
 export const settingsApi = {
   get: () => request<ApiSettings>('/settings'),
 
-  put: (data: Omit<ApiSettings, 'id' | 'updatedAt'>) =>
+  put: (data: Omit<ApiSettings, 'id' | 'userId' | 'updatedAt'>) =>
     request<ApiSettings>('/settings', {
       method: 'PUT',
       body: JSON.stringify(data),
@@ -45,6 +53,7 @@ export const settingsApi = {
 
 export type ApiTask = {
   id: string;
+  userId: number;
   name: string;
   duration: number;
   type: string;
@@ -57,7 +66,7 @@ export type ApiTask = {
 export const tasksApi = {
   list: () => request<ApiTask[]>('/tasks'),
 
-  create: (data: Omit<ApiTask, 'createdAt'>) =>
+  create: (data: Omit<ApiTask, 'userId' | 'createdAt'>) =>
     request<ApiTask>('/tasks', {
       method: 'POST',
       body: JSON.stringify(data),
